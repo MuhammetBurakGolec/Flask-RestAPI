@@ -58,12 +58,6 @@ class Math(Resource):
 api.add_resource(City, "/city/<id>")
 api.add_resource(Math,"/math/<islem>/<num1>/<num2>")
 
-"""
-@app.route("/<string:name>")
-def baslgic(name :str):
-    #name = request.args.get("name")
-    return jsonify(data=name),200
-"""
 
 if __name__ == '__main__':
     app.run()
